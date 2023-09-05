@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #080808;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Change the color as desired */
+  border-radius: 3px; /* Adjust the radius as desired */
+}
+
+textarea {
+  resize: none;
+}
+
+a.active span {
+  border-bottom: 3px solid #f2fc89;
+  padding-bottom: 0.25rem;
+}
+
+@media (min-width: 1280px) {
+  #nigerianNews::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+  }
+
+  #nigerianNews::-webkit-scrollbar-thumb {
+    background-color: #f2fc89; /* Change the color as desired */
+    border-radius: 3px;
+  }
+
+  /* For Firefox */
+  #nigerianNews {
+    scrollbar-width: none;
+  }
+
+  a.active span:nth-child(2) {
+    border-bottom: 3px solid #f2fc89;
+    padding-bottom: 0.25rem;
+  }
+  a.active span:nth-child(1) {
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+  }
+}
